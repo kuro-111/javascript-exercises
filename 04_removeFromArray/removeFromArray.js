@@ -1,4 +1,16 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr, numToRemove) {
+
+    let newArr = arr.filter((OriginalArray) => {
+
+        if (numToRemove.includes(OriginalArray)) {
+            return false;
+      }
+        else {
+            return true;
+        }
+    });
+
+    return newArr;
 
 };
 
